@@ -1,9 +1,9 @@
 # Automated Broadcast Data Pipeline
 
-An ETL (Extract, Transform, Load) data processing pipeline designed to ingest, clean, and standardize messy broadcast scheduling data. 
+An ETL (Extract, Transform, Load) data processing pipeline designed to ingest, clean, and standardize messy broadcast scheduling data (Monitoring Node Schedule). 
 
 ## 📌 Project Overview
-In broadcasting, raw schedule data is often highly unstructured. Events come in with inconsistent delimiters (e.g., `v`, `vs`, `@`, `-`), undocumented internal jargon, and shorthand team aliases.
+Within the Node Schedule, raw schedule data from our Clients is often highly unstructured. Events come in with inconsistent delimiters (e.g., `v`, `vs`, `@`, `-`), undocumented internal jargon, and shorthand team aliases.
 
 This Python pipeline utilizes **Pandas** and **Regular Expressions** to programmatically clean this data. It cross-references incoming events against a master dictionary for O(1) alias mapping, filters out blacklisted strings, and standardizes the output for downstream ingestion.
 
